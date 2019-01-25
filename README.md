@@ -15,3 +15,14 @@ The "Producer" and "Consumer" and asynchronous.
 a message to an actor to do something.
 
 * Actors have a single API - mailbox
+
+* The only way to communicate with Actors is by sending messages to actors. These messages are stored in the mailbox and akka will 
+go and read the messages from there and then executes some actions.
+
+## Concurrency in Akka
+
+* Akka helps in concurrency by following a no shared data architecture
+
+* Like a simple object, akka has also data and methods, but the data is not shared with anybody, which makes it concurrent
+and helps to run in parallel.
+
